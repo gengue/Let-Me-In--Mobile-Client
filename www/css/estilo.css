@@ -1,0 +1,31 @@
+.fit-content, .bottom-footer {
+                            position : absolute;
+                        }
+                
+                    .fit-content {
+                            top : 44px;
+                            bottom : 44px;
+                                left : 0;
+                                right : 0;
+                        }
+
+                        .fit-content > div {
+                                height : 100%;
+                        }
+                        
+                        .bottom-footer {
+                            bottom : 0;
+                                width : 100%;
+                        }
+                        
+                        .yellow-bg {
+                            background-color: yellow;
+                        }
+                        #ajax_loader{
+                        	text-align: center;
+                        }
+                        .ui-block-a, .ui-block-b, .ui-block-c {
+                          height : 30px;
+                          text-align : center;
+                          padding-top : 5px;
+                        }
