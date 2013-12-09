@@ -14,7 +14,7 @@ $(document).ready(function(){
 })
 
 function mostrarUsuarios(){
-    ruta = 'http://letmein-ws.esy.es/usuarios.php';
+    ruta = 'http://letmein-webservices.esy.es/usuarios.php';
     $('#contenido-lista').html('<p id="ajax_loader"><img src="images/ajax-loader.gif" /></p>');
     $.ajax({
         url: ruta,
@@ -32,7 +32,7 @@ function mostrarUsuarios(){
 }
 
 function mostrarRegistros(){
-      ruta = 'http://letmein-ws.esy.es/registros.php';
+      ruta = 'http://letmein-webservices.esy.es/registros.php';
       $('#tabla').html('<p id="ajax_loader"><img src="images/ajax-loader.gif" /></p>');     
        $.ajax({       
           url: ruta,
@@ -46,7 +46,7 @@ function mostrarRegistros(){
                         var apellido = registro[index].apellidos;
                         var fechaIngreso = registro[index].fechaYhora;
                         var id = registro[index].entradaid;
-                        $.get( "http://letmein-ws.esy.es/registros.php?id="+id, function( data ) { 
+                        $.get( "http://letmein-webservices.esy.es/registros.php?id="+id, function( data ) { 
                             var fechaSalida = data[0].fechasalida;
                             $("#tabla").append('<div class="ui-block-a">'+nombre+" "+apellido+'</div><div class="ui-block-b">'+fechaIngreso+'</div><div class="ui-block-c">'+fechaSalida+'</div>');
               }, "json");
